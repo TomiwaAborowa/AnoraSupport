@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #000;
+  color: #fff;
+}
+
+body {
+  font-family: "Outfit", "Montserrat", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #fff;
+  color: #000;
+}
+
+/* Soft grey glow echoing the shadow under the ANORA wordmark */
+.glow-hover {
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.glow-hover:hover {
+  border-color: #3a3a3a;
+  box-shadow: 0 8px 30px -12px rgba(255, 255, 255, 0.22);
+}
+
+audio {
+  width: 100%;
+  filter: invert(1) grayscale(1);
+  height: 40px;
+}
